@@ -16,6 +16,14 @@ const config: Linter.Config = deepmerge(functional, {
       },
     ],
   },
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      rules: {
+        "functional/prefer-readonly-type-declaration": "warn",
+      },
+    },
+  ],
 } as Linter.Config);
 
 export default config;
