@@ -79,8 +79,8 @@ export function isCallExpression(
 
 export function isClassProperty(
   node: TSESTree.Node
-): node is TSESTree.ClassProperty {
-  return node.type === AST_NODE_TYPES.ClassProperty;
+): node is TSESTree.PropertyDefinition {
+  return node.type === AST_NODE_TYPES.PropertyDefinition;
 }
 
 /**
